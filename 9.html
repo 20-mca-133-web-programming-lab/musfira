@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color : yellow;
+}
+.button {
+background-color: #343deb;
+color: white;
+padding: 15px 40px;
+text-align: center;
+display: inline-block;
+font-size: 20px;
+}
+</style>
+</head>
+<body>
+<center><br>
+<h2><font color="white" size="9">Click here To change Background Color</h2>
+<button class="button" onclick="backgroundchange('red')">Press the Button</button>
+<script>
+function backgroundchange(color) {
+document.body.style.background = color;
+}
+</script>
+</center>
+</body>
+</html>

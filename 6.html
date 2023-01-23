@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2{
+font-size:30px;
+color:green;
+font-weight:bold;
+text-decoration:underline;
+}
+p{
+font-size:20px;
+color:purple;
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+<center>
+<h2>Math Functions</h2>
+<p>Ceilof 4.6:<span id="p1"></span><br>
+Square Root of 17 is:<span id="p2"></span><br>
+Random Number is:<span id="p3"></span><br>
+3 of the power of 4 is:<span id="p4"></span><br>
+Floor of 4.6 is:<span id="p5"></span><br>
+Round of 4.3 is:<span id="p6"></span><br>
+Round of 4.7 is:<span id="p7"></span><br>
+Absolute value of -4 is:<span id="p8"></span><br>
+Minimum value is:<span id="p9"></span><br>
+Maximum value is:<span id="p10"></span><br>
+<h2>String Functions</h2>
+<p>Str.charAt(2) of Javascript is:<span id="p11"></span><br>
+str.concat():<span id="p12"></span><br>
+str.indexOf() of Good Morning to one and all present here is:<span id="p13"></span><br>
+str.toLowerCase():<span id="p14"></span><br>
+str.toUpperCase():<span id="p15"></span><br>
+str.slice(2,5) of abcdefgh:<span id="p16"></span><br>
+str.trim():<span id="p17"></span><br>
+str.split():<span id="p18"></span><br>
+<p>
+<script>
+document.getElementById('p1').innerHTML=Math.ceil(4,6);
+document.getElementById('p2').innerHTML=Math.sqrt(17);
+document.getElementById('p3').innerHTML=Math.random(10000);
+document.getElementById('p4').innerHTML=Math.pow(3,4);
+document.getElementById('p5').innerHTML=Math.floor(4,6);
+document.getElementById('p6').innerHTML=Math.round(4,3);
+document.getElementById('p7').innerHTML=Math.round(4,7);
+document.getElementById('p8').innerHTML=Math.abs(-4);
+document.getElementById('p9').innerHTML=Math.min(-10,0,5,10,100);
+document.getElementById('p10').innerHTML=Math.max(-4,0,10,200);
+var str="Javascript";
+document.getElementById('p11').innerHTML=str.charAt(2);
+var s1="Javascript";
+var s2="is client side scripting language";
+var s3=s1.concat(s2);
+document.getElementById('p12').innerHTML=s3;
+var str="Good morning to one and all present here";
+var n=str.indexOf("one");
+document.getElementById('p13').innerHTML=n;
+var x="JavaScript toLowerCase";
+var y=x.toLowerCase();
+document.getElementById('p14').innerHTML=y;
+var a="JavaScript toUpperCase";
+var b=a.toUpperCase();
+document.getElementById('p15').innerHTML=b;
+var p="abcdefgh";
+var q=p.slice(2,5);
+document.getElementById('p16').innerHTML=q;
+var s="Javascript trim";
+var t=s.trim();
+document.getElementById('p17').innerHTML=t;
+var str="Happy birthday to you";
+document.getElementById('p18').innerHTML=str.split(" ");
+</script>
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
